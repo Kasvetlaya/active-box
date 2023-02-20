@@ -1,0 +1,152 @@
+/* team section styling */
+
+.team {
+    display: flex;
+    justify-content: center;
+    padding: 114px 0;
+}
+
+.team__container {
+    width: 100%;
+    max-width: 1170px;
+}
+
+.team__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-item {
+    max-width: 270px;
+}
+
+.team-item__photo {
+    width: 270px;
+}
+
+.team-item__name {
+    font-weight: 700;
+    color: #2D3033;
+    margin: 30px 0 5px;
+}
+
+.team-item__position {
+    text-transform: uppercase;
+    color: #FF4343;
+}
+
+.team-item__about {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6C7279;
+    margin: 18px 0 28px;
+}
+
+.team-item__social svg{
+    cursor: pointer;
+}
+
+.facebook:hover {
+    & path {
+    fill: #1877f2;
+    transition: 1s;
+    }
+    & rect {
+        stroke: #1877f2;
+        transition: 1s;
+    }
+}
+
+.twitter:hover {
+    & path {
+        fill: #1da1f2;
+        transition: 1s;
+        }
+    & rect {
+        stroke: #1da1f2;
+        transition: 1s;
+    }
+}
+
+.linkedin:hover {
+    & path {
+        fill: #2867B2;
+        transition: 1s;
+        }
+    & rect {
+        stroke: #2867B2;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 1200px) {
+    .team {
+        padding: 78px 0;
+    }
+    
+    .team__container {
+        max-width: 984px;
+    }
+
+    .team-item {
+        max-width: 227px;
+    }
+
+    .team-item__photo {
+        width: 227px;
+    }
+
+    .team-item__name {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 25px 0 5px;
+    }
+
+    .team-item__position {
+        font-size: 14px;
+        line-height: 16px;
+    }    
+
+    .team-item__about {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 22px 0 39px;
+    }
+}
+
+@media (max-width: 992px) {
+    .team {
+        padding: 78px 0;
+    }
+
+    .team__content {
+        display: grid;
+        grid-template-columns: 270px 270px;
+        justify-content: center;
+        justify-items: center;
+        gap: 49px 0;
+    }
+
+    .team-item__photo {
+        width: 227px;
+    }
+}
+
+@media (max-width: 600px) {
+    .team {
+        padding: 35px 0;
+    }
+
+    .team__content {
+        grid-template-columns: 280px;
+    }
+
+    .team-item {
+        max-width: 280px;
+    }
+
+    .team-item__photo {
+        width: 280px;
+    }
+}
